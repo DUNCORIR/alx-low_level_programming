@@ -1,5 +1,10 @@
 #include <stdio.h>
-/*The main function where the program execution begins*/
+/**
+* main - Entry point of the program
+* Description: This function prints the sizes of various data types
+* on the computer it is compiled and run on.
+* Return: Always returns 0 (Success)
+*/
 int main(void)
 {
 printf("Size of a char: %zu byte(s)\n", sizeof(char));

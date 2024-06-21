@@ -1,0 +1,12 @@
+#!/bin/bash
+n=$((RANDOM - RANDOM))
+last_digit=${n: -1}
+last_digit=${last_digit#-}
+echo -n "Last digit of $n is $last_digit and is "
+if [ "$last_digit" -gt 5 ]; then
+    echo "greater than 5"
+elif [ "$last_digit" -eq 0 ]; then
+    echo "0"
+else
+    echo "less than 6 and not 0"
+fi

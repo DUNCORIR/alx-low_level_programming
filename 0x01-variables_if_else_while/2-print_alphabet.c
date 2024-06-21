@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-int main(void)
 /**
  * main - Entry point of the program
  *
@@ -11,6 +9,7 @@ int main(void)
  *
  * Return: Always 0 (Success)
  */
+int main(void)
 {
 
 char letter;

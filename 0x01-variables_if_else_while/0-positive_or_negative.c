@@ -6,10 +6,11 @@
  * Program asigns a random number to the variable `n`
  * each time it is executed, and prints whether the number is positive,
  * negative, or zero.
+ * Return: Always returns 0 (Success)
  */
 int main(void)
 {
-/*Seed the random number generator with the current time*/
+
 int n;
 
 srand(time(0));

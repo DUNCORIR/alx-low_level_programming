@@ -11,13 +11,13 @@ int main()
 {
 char letter;
 
-for (char letter = 'a'; letter <= 'z'; letter++)
+for (letter = 'a'; letter <= 'z'; letter++)
 {
 
 putchar(letter);
 
 }
-for (char letter = 'A'; letter <= 'Z'; letter++)
+for (letter = 'A'; letter <= 'Z'; letter++)
 
 {
 

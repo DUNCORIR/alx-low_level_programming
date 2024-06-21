@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - Entry point of the program
+ * Return: 0 (Success)
+ */
 
 int main(void)
 
@@ -7,7 +11,7 @@ int main(void)
 char hex_digits[] = "0123456789abcdef";
 int i;
 
-for (i = 0; i < 16; i++) 
+for (i = 0; i < 16; i++)
 
 {
 

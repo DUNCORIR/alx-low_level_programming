@@ -1,0 +1,6 @@
+#!/bin/bash
+for (( i=122; i>=97; i-- )); do
+printf "$(printf \\$(printf '%03o' "$i"))"
+done
+
+printf "\n"

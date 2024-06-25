@@ -7,8 +7,7 @@
  */
 
 int main(void)
- /* main - entry point of program
- * Description: A program that prints _putchar, followed by a new line.*/
+ /* main - entry point of program* Description */
 
 {
 int i;

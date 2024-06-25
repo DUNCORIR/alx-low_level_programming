@@ -1,4 +1,4 @@
-#include "2-main.h"
+#include "main.h"
 /**
  * print_alphabet_x10 - Prints the alphabet 10 times, in lowercase,
  * proceded  by a new line.

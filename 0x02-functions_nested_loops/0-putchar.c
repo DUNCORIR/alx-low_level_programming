@@ -1,11 +1,13 @@
 #include "main.h"
  /**
- *main.h -custom header file has the prototype for the _putchar function
- *Return: Always 0 (Success)
+ * main.h -custom header file has the prototype for the _putchar function
+ * Description: A program that prints _putchar, followed by a new line.
+ * main - entry point of program
+ * Return: Always 0 (Success)
  */
 
 int main(void)
-/*main - entry point of program */
+
 {
 int i;
 char str[] = "_putchar\n";

@@ -6,13 +6,16 @@ void print_alphabet(void)
 
 {
 
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
+
+int i;
+
+for (i = 0; alphabet[i] != '\0'; i++)
+
+
 {
-_putchar(ch);
+
+_putchar(alphabet[i]);
 
 }
-
-_putchar('\n');
-
 }

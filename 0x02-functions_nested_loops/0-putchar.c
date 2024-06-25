@@ -1,9 +1,8 @@
 #include "main.h"
-/*main.h -custom header file has the prototype for the _putchar function.
- *
- *main- entry point of program */
+/*main.h -custom header file has the prototype for the _putchar function*/
+
 int main(void)
-/*main- entry point of program */
+/*main - entry point of program */
 {
 int i;
 char str[] = "_putchar\n";

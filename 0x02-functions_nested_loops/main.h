@@ -8,4 +8,7 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 /* _islower function */
 int _islower(int c);
+/* _isalpha function */
+int _isalpha(int c);
+
 #endif 

@@ -24,4 +24,6 @@ void times_table(void);
 int add(int, int);
 /*function that prints all natural numbers from n to 98, followed by a new line.*/
 void print_to_98(int n);
+/*function that prints the n times table, starting with 0.*/
+void print_times_table(int n);
 #endif 

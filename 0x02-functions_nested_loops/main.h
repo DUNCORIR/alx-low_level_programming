@@ -14,4 +14,6 @@ int _isalpha(int c);
 int print_sign(int n);
 /* _abs function */
 int _abs(int n);
+/*function that prints the last digit of a number*/
+int print_last_digit(int);
 #endif 

@@ -8,12 +8,13 @@
 
 int _islower(int c)
 {
+/* @c: The character to check.*/
+
 if (c >= 'a' && c <= 'z')
 {
 return (1);
 }
 else
 {
-return (0);	    
-}
+return (0);
 }

@@ -30,4 +30,3 @@ _putchar(n % 10 + '0');
 /* Print each digit by converting it to character.*/
 
 }
-

@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/*Function prototype for finding the largest prime factor.*/
+/*
+ *Main - Entry point
+ * Function prototype for finding the largest prime factor.
+ * Return max_factor - Return the largest prime factor
+ * */
 long largest_prime_factor(long n);
 
 int main(void)

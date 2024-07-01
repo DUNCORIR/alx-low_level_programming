@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reverse_string - Reverses a string
+ * rev_string - Reverses a string
  * @s: Pointer to the string to be reversed
  *
  * Description: This function reverses the string pointed to by s.
@@ -23,6 +23,6 @@ for (i = 0; i < length / 2; i++)
 {
 temp = s[i];
 s[i] = s[length - i - 1];
-s[length - i -1] = temp;
+s[length - i - 1] = temp;
 }
 }

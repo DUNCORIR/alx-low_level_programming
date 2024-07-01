@@ -18,5 +18,5 @@ dest_ptr++;
 src++;
 }
 *dest_ptr = '\0';
-return dest;
+return (dest);
 }

@@ -4,8 +4,9 @@
  * puts_half - Prints the second half of a string, followed by a new line
  * @str: Pointer to the string to be printed
  *
- * Description: If the number of characters is odd, the function should print the last  *               n characters of the string, where n = (length_of_the_string - 1) / 2.
- *              Otherwise, it prints from the midpoint to the end.
+ * Description: the function should print the last n characters of the string
+ * where n = (length_of_the_string - 1) / 2 + 1.
+ * Otherwise, it prints from the midpoint to the end.
  */
 void puts_half(char *str)
 {
@@ -20,7 +21,7 @@ if (length % 2 == 0)
 {
 start = length / 2;
 }
-else 
+else
 {
 start = (length - 1) / 2 + 1;
 }

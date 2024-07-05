@@ -17,10 +17,10 @@ char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 int i;
 /* iterates thro' each character in string */
 while (*ptr != '\0')
- {
+  {
 /* iterates through characters in alphabet */
 for (i = 0; alphabet[i] != '\0'; i++)
-   {
+     {
 	if (*ptr == alphabet[i])
 	{
 /* Replaces char with corresponding ROT13 character */
@@ -28,9 +28,9 @@ for (i = 0; alphabet[i] != '\0'; i++)
 /* Exits loop once a replacement is made */
 	break;
 	}
-   }
+     }
 /* moves to next character */
-ptr++;
- }
+   ptr++;
+  }
 return (str);
 }

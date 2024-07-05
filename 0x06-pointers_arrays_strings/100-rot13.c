@@ -15,7 +15,6 @@ char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 /* loop variable declaration */
 int i;
-
 /* iterates thro' each character in string */
 while (*ptr != '\0')
  {
@@ -33,5 +32,5 @@ for (i = 0; alphabet[i] != '\0'; i++)
 /* moves to next character */
 ptr++;
  }
-return str;
+return (str);
 }

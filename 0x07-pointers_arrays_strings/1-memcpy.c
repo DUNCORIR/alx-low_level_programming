@@ -10,9 +10,13 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
+
+	/* Loop over the source memory area and copy each byte to destination */
 	for (i = 0; i < n; i++)
 	{
 		dest[i] = src[i];
 	}
+
+	/* Return pointer to the destination memory area */
 	return (dest);
 }

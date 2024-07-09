@@ -13,15 +13,20 @@ void print_diagsums(int *a, int size)
 	int sum2 = 0;
 	
 	/* calculates sum of main diagonal */
+
 	for (i = 0; i < size; i++)
 	{
 		sum1 += a[i * size + i];
 	}
+
 	/* calculates sum of secondary diagonal */
+
 	for (i = 0; i < size; i++)
 	{
 		sum2 += a[i * size + (size - 1- i)];
 	}
+
 	/* prints the sums */
+
 	printf( "%d,%d\n", sum1 ,sum2);
 }

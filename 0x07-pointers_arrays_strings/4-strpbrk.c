@@ -3,7 +3,7 @@
 
 /**
  * _strpbrk -To search a string for any sets of bytes.
- * @s: The string to be searched
+ * @s: The string to be searched.
  * @accept: Set of bytes to be searched.
  *
  * Return: Pointer to bytes in s that matyches one of the bytes 
@@ -24,8 +24,10 @@ char *_strpbrk(char *s, char *accept)
 				return s;
 			}
 			a++;
+
 		}
 		s++;
+		
 	}
 	/* returns NULL if no match of byte is found */
 	return NULL;

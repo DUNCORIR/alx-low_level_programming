@@ -6,7 +6,7 @@
  * @n: The number to find the square root of.
  * @i: The current number to test as the potential square root.
  *
- * Return: The square root of n, or -1 if n does not have a natural square root.
+ * Return: square root of n, or -1 if n doesn't have natural square root.
  */
 int _sqrt_helper(int n, int i)
 {
@@ -19,8 +19,9 @@ int _sqrt_helper(int n, int i)
 /**
  * _sqrt_recursion - Function that returns the natural square root of a number.
  * @n: The number to find the square root of.
+ *_sqrt_helper - Helper function to find the square root.
  *
- * Return: The natural square root of n, or -1 if n does not have a natural square root.
+ * Return: Natural square root of n, or -1 if n doesn't have natural square root.
  */
 int _sqrt_recursion(int n)
 {

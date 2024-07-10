@@ -3,7 +3,8 @@
 /**
  * is_prime_number -function that checks prime number.
  * @n : number to be checked if prime or not.
- * @i: The current divisor being tested.
+ * @i: Is the current divisor being tested.
+ * is_prime_helper - Helper function to check if a number is prime.
  *
  * Return: Returns 1 if prime ,0 if not.
  */

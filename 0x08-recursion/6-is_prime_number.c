@@ -8,6 +8,7 @@
  *
  * Return: Returns 1 if prime ,0 if not.
  */
+/* is_prime_helper - Helper function to check if a number is prime. */
 int is_prime_helper(int n, int i)
 {
 	if (n <= 1)

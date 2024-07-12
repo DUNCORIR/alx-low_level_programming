@@ -3,8 +3,8 @@
 
 /**
  * main - Function multiplies two numbers.
- * @argc: number of command line arguments.
- * @argv: array containing the program command line arguments.
+ * @argc: Is the number of command line arguments.
+ * @argv: The array containing the program command line arguments.
  *
  * Return: 0 if successful, 1 if number of arguments is incorrect.
  */

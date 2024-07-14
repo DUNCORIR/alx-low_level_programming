@@ -8,7 +8,6 @@
  *
  * Return: 1 for errors and 0 if successful.
  */
-
 int main(int argc, char *argv[])
 {
 	/* Initializes cents ,denominations and iterative counts for loops */
@@ -24,7 +23,6 @@ int main(int argc, char *argv[])
 	}
 	/* Converts strings to number integer counts */
 	cents = atoi(argv[1]);
-
 	if (cents < 0)
 	{
 	/* Prints output for 1 */
@@ -44,4 +42,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", coins);
 	return (0);
 }
-

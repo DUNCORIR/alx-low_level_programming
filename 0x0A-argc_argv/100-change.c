@@ -4,10 +4,11 @@
 /**
  * main - Prints minimum number of coins to make change for any amount of money.
  * @argc: The number of command line arguments.
- * @argv; The array contained in program line arguments.
+ * @argv: The array contained in program line arguments.
  *
  * Return: 1 for errors and 0 if successful.
  */
+
 int main(int argc, char *argv[])
 {
 	/* Initializes cents ,denominations and iterative counts for loops */
@@ -30,7 +31,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
 	/* initializing, condition and increment */
 	for (i = 0; i < 5; i++)
 	{
@@ -44,3 +44,4 @@ int main(int argc, char *argv[])
 	printf("%d\n", coins);
 	return (0);
 }
+

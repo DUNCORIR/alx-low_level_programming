@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strdup - returns pointer to a new string which is a duplicate of string str.
+ * _strdup - returns pointer to new string which is duplicate of string str.
  * @str: duplicated string.
  *
  * Return: NULL if str = NULL if insufficient memory and pointer

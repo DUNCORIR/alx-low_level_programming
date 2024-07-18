@@ -4,10 +4,9 @@
 
 /**
  * string_nconcat - Function that concatenates two strings.
- * @src: string to be added from.
- * @dest: string to be added to.
  * @s1: Pointer to dest
  * @s2: Pointer to src
+ *
  * Return: NULL if it fails ,if NULL passed treat as empty string
  * otherwise pointer with s1,s2 and null terminator.
  */
@@ -22,10 +21,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
+	
 	len_s1 = strlen(s1);
 	len_s2 = strlen(s2);
-
+	
 	/* Use s2 if n >=s2 */
 	if (n >= len_s2)
 		n = len_s2;

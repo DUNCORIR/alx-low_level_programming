@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _calloc - Function that allocates memory for ana array using malloc.
+ * calloc - Function that allocates memory for ana array using malloc.
  * @nmemb: Number of elements.
  * @size: size of each element.
  *
@@ -20,11 +20,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	/* Total memory allocated */
 	result_size = nmemb * size;
 	allocated_memory = malloc(result_size);
-	
+	/* allocation failure checked */
 	if (allocated_memory == NULL)
 	{
 		return (NULL);
 	}
+	/* resets allocated memory to 0.*/
 	memset(allocated_memory, 0, result_size);
 	return (allocated_memory);
 }

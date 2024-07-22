@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	/*Expands to the name of the current input file as string */
-	printf ("%s\n", __FILE__);
+	/* Expands to the name of the current input file as string */
+	printf("%s\n", __FILE__);
 	return (0);
 }

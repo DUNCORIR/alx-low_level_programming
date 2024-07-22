@@ -1,5 +1,6 @@
 #include <stdio.h>
-/* defining struct dog. */
+
+/* struct - defining struct dog. */
 struct dog
 {
 	char *name;

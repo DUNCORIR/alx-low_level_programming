@@ -17,7 +17,10 @@ struct dog
 	char *owner;
 };
 
-/* A Typedef for struct dog to dog_t */
+/**
+ *  typedef - a typedef for struct dog to dog_t
+ * dog_t - new name for struct dog 
+ */
 typedef struct dog dog_t;
 
 /**

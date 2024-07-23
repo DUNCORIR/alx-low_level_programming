@@ -63,4 +63,15 @@ void print_dog(struct dog *d);
  */ 
 dog_t *new_dog(char *name, float age, char *owner);
 
+/**
+ * free_dog - Function function that frees dogs.
+ * @age: age of dog
+ * @name: name of dog
+ * @owner:is the owner of dog
+ * 
+ * Description: The function frees the dog.
+ */
+
+void free_dog(dog_t *d);
+
 #endif /* DOG_H */

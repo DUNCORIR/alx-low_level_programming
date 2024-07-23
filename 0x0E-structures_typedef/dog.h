@@ -36,8 +36,9 @@ typedef struct dog dog_t;
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+
 /**
- *  * print_dog - prints a struct dog
+ * print_dog - prints a struct dog
  * @d: pointer to the struct dog to print
  *
  * Description: The function prints the details of a struct dog. If
@@ -47,14 +48,19 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
  */
 
 void print_dog(struct dog *d);
+
 /**
- * print_dog - Function that prints a struct dog
- * @d: pointer to the dog structure
+ * new_dog - function creates a new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner:is the owner of dog
  *
- * Description: The function will print the details of a struct dog.
- * If an element of d is NULL, print (nil) instead of this element.
- *  (if name is NULL, print Name: (nil)).
- *  If d is NULL print nothing.
- */
+ * Description: The function creates a new dog,initializes its
+ * members with given values then stores copies of name and owner.
+ * if function fails,it returns NULL.
+ *
+ * Return: A pointer to the dog and NULL if it fails.
+ */ 
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif /* DOG_H */

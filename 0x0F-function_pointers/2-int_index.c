@@ -1,6 +1,4 @@
 #include "function_pointers.h"
-#include <stdlib.h>
-#include <string.h>
 
 /**
  * int_index - Returns the index of the first element used

@@ -17,7 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 	
-	/*check size of array the compares */
+	/*check size of array the compares and size is positive */
 	if (array == NULL || size <= 0 || cmp == NULL)
 	{
 		return (-1);
@@ -27,9 +27,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 	for (i = 0; i < size; i++)
 	{
 		/* comparing arrays using function */
-		if (cmp(array[i] != 0))
+		if (cmp(array[i]) != 0)
 		{
-			/* Returning index of first match scenario */
+			/* Return the index of first match */
 			return (i);
 		}
 	}

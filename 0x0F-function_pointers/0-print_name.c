@@ -4,9 +4,12 @@
 
 /**
  * print_name - function that prints a name.
- * @name: name to be printed.
- * @f:pointer to function that accepts char
- * Return: Nothing
+ * @name: The name to be printed.
+ * @f: Pointer to a function that accepts char*.
+ * 
+ *
+ * Description: Calls the function pointed to by @f, giving @name
+ * as the argument. If either @name or @f is NULL, nothing happens.
  */ 
 void print_name(char *name, void (*f)(char *))
 {

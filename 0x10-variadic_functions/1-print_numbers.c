@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print-number - Function that prints numbers.
+ * print-numbers - Function that prints numbers.
  * @separator: The string to be printed between numbers.
  * @n: Number of integers passed through the function.
  *
@@ -16,11 +16,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int num;
 	
-	/*initialize the argument list */
+	/*Initialize the argument list */
 	va_start(args, n);
-		
 	
-	/* iterating through the numbers */
+	
+	/* Iterating through the numbers */
 	for (i = 0; i < n; i++)
 	{
 		num = va_arg(args, int);
@@ -34,9 +34,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	
-	/* clean the argument list */
+	/* Clean up the argument list */
 	va_end(args);
 	
-	/* printing a new line */
+	/* Printing a new line */
 	printf ("\n");
 }

@@ -6,7 +6,7 @@
  * @argc: Number of arguments.
  * @argv: Array of arguments
  *
- * Return: Return o on succes, 2 if number of bytes
+ * Return: Return 0 on succes, 2 if number of bytes is
  * -ve and 1 if argument number is incorect.
  */
 int main(int argc, char *argv[])
@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
 	int num_bytes;
 	int i;
 	unsigned char* m_ptr;
-
 
 	/* Check number of arguments */
 	if (argc != 2)
@@ -30,7 +29,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (2);
 	}
-	
+
 	/* Get address of main function using m_ptr */
 	m_ptr = (unsigned char*) main;
 

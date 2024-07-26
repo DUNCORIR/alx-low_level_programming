@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * main - Prints the opcodes as it is own main function.
+/** 
+ * main - Prints the opcodes of its own main function.
  * @argc: Number of arguments.
  * @argv: Array of arguments
  *
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	/* Converting argument to interger using atoi */
+	/* Converts argument to interger using atoi */
 	num_bytes = atoi(argv[1]);
 	if (num_bytes < 0)
 	{
@@ -41,9 +41,9 @@ int main(int argc, char *argv[])
 		if (i < num_bytes - 1)
 			printf(" ");
 	}
-	/* print a new line */
 
+	/* print a new line */
 	printf("\n");
+
 	return (0);
 }
-

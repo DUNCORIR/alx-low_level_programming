@@ -11,7 +11,7 @@ main:
 	; Set up the stack frame
 	push rbp
 	mov rbp, rsp
-	
+
 	;align stack to 16-byte before calling printf
 	sub rsp, 16
 
@@ -20,7 +20,6 @@ main:
 
 	; loads the address of the hello string into rsi
 	lea rsi, [rel hello]
-	
 
 	; clear rax registry
 	xor rax, rax
@@ -34,4 +33,4 @@ main:
 	; Clean up the stack frame and return
 	mov rsp, rbp
 	pop rbp
-	ret 
+	ret

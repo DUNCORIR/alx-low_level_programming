@@ -1,11 +1,11 @@
 section .data
-	hello db 'Hello, Holberton', 0 	; The string to print.
-	fmt db '%s', 10, 0		; Format string for printf with new line.
+	hello db 'Hello, Holberton', 0 	; The string to print
+	fmt db '%s', 10, 0		; Format string for printf with new line
 
 section .text
-	global main			; Is the entry point of program.
+	global main			; Is the entry point of program
 
-extern printf				; Declares printf function.
+extern printf				; Declares printf function
 
 main:
 	; Set up the stack frame

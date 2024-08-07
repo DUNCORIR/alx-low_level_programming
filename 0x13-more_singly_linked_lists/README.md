@@ -11,3 +11,7 @@ More singly linked lists
 8.int sum_listint(listint_t *head);Function that returns the sum of all the data (n) of a listint_t linked list.
 9.listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);Function that inserts a new node at a given position.
 10.int delete_nodeint_at_index(listint_t **head, unsigned int index);Function that deletes the node at index index of a listint_t linked list.
+11.listint_t *reverse_listint(listint_t **head); Function that reverses a listint_t linked list.
+12.size_t print_listint_safe(const listint_t *head);Function that prints a listint_t linked list.
+13.size_t free_listint_safe(listint_t **h); Function that frees a listint_t list.
+14.listint_t *find_listint_loop(listint_t *head); Function that finds the loop in a linked list.

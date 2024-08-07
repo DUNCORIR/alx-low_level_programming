@@ -8,6 +8,7 @@
  */
 listint_t *reverse_listint(listint_t **head)
 {
+	/* Initialization of variables and declaration */
 	listint_t *prev;
 	listint_t *current;
 
@@ -16,7 +17,7 @@ listint_t *reverse_listint(listint_t **head)
 
 	while (current != NULL)
 	{
-		/* stores the next node */
+		/* store the next node */
 		listint_t *next_node = current->next;
 		/*Reverse current node's pointer */
 		current->next = prev;
@@ -25,7 +26,6 @@ listint_t *reverse_listint(listint_t **head)
 		/* moves current to next node */
 		current = next_node;
 	}
-
 	/* Update Head to the new First node */
 	*head = prev;
 	/* Return a pointer to reversed list */

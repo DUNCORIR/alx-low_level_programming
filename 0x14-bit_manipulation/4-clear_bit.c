@@ -13,7 +13,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	unsigned long int mask;
 
 	/* check whether index is within range of bits */
-	if (index >= sizeof(unsigned long int) * 8)
+	if (index >= sizeof(unsigned long int) * CHAR_BIT)
 	{
 		/* For index out of range */
 		return (-1);
@@ -21,6 +21,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	/* creates mask with 0 at bit position and 1s elsewhere.*/
 	mask = 1UL << index;
+
+	mask = ~mask;
+
 	/* use bitwise AND with compliment of the mask to clear the bit */
 	*n &= mask;
 

@@ -6,8 +6,6 @@
  * to flip from one number to another.
  * @n: The first number.
  * @m: The second number.
- * Description: This function returns number of bits required to
- * flip a number to another.
  *
  * Return: The number of bits to flip.
  */

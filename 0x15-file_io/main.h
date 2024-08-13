@@ -8,6 +8,12 @@
 /* For close,read,write */
 #include <unistd.h>
 
+void print_error(const char *message)
+{
+	fprintf(stderr, "%s\n", message);
+	exit(98);
+}
+
 int _putchar(char c);
 
 /*****************FUNCTIONS*********/

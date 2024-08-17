@@ -58,6 +58,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	free(buffer);
 	close(fd);
-	/*return the no of bytes successfully read and writen */
+	/* Return the no of bytes successfully read and writen */
 	return (bytesWritten);
 }

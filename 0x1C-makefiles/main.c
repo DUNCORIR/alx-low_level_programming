@@ -7,3 +7,4 @@ int main(void)
 	school ();
 	return (0);
 }
+/* School */

@@ -1,6 +1,6 @@
 # Variables
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)  # Automatically converts .c files to .o files
 NAME = school
 
@@ -18,3 +18,5 @@ $(NAME): $(OBJ)
 # Clean rule to remove object files and executable
 clean:
 	rm -f $(OBJ) $(NAME)
+
+.PHONY: all clean

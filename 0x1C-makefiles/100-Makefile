@@ -1,33 +1,31 @@
 # Variables
 CC = gcc
-SRC = $(wildcard *.c)  # All the .c files in the directory
-OBJ = $(SRC:.c=.o)      # Converts .c files to .o files
+SRC = $(wildcard *.c)       # All .c files in the directory
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
-RM = rm -f
 
-# Ensure m.h is present
-ifeq ($(shell test -f m.h && echo -n yes),yes)
-else
-    $(error "Header file m.h is missing")
+# Check if the header file m.h exists
+ifeq ($(shell test -f m.h && echo -n yes),)
+$(error "Header file m.h is missing")
 endif
 
 # Rule to build the executable
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+$(NAME): $(SRC:.c=.o)    # Automatically create .o files from .c files
+	$(CC) $(CFLAGS) $(SRC:.c=.o) -o $(NAME)   # Compile and link
 
 # Rule to delete object files
 oclean:
-	$(RM) $(OBJ)
+	rm -f $(SRC:.c=.o)    # Remove the object files
 
-# Rule to delete everything (object files and executable)
+# Rule to delete all (object files and executable)
 clean: oclean
-	$(RM) $(NAME)
+	rm -f $(NAME)         # Remove the executable
 
-# Rule to delete everything and recompile
+# Rule to delete everything (including Emacs/Vim temp files)
 fclean: clean
+	rm -f *.swp *.swo      # Remove Emacs and Vim temp files
 
-# Rule to force recompilation of all source files
+# Rule to force recompilation
 re: fclean all

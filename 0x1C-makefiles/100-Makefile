@@ -1,0 +1,33 @@
+# Variables
+CC = gcc
+SRC = $(wildcard *.c)  # All the .c files in the directory
+OBJ = $(SRC:.c=.o)      # Converts .c files to .o files
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+RM = rm -f
+
+# Ensure m.h is present
+ifeq ($(shell test -f m.h && echo -n yes),yes)
+else
+    $(error "Header file m.h is missing")
+endif
+
+# Rule to build the executable
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Rule to delete object files
+oclean:
+	$(RM) $(OBJ)
+
+# Rule to delete everything (object files and executable)
+clean: oclean
+	$(RM) $(NAME)
+
+# Rule to delete everything and recompile
+fclean: clean
+
+# Rule to force recompilation of all source files
+re: fclean all

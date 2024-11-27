@@ -1,0 +1,37 @@
+# Define variables
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic  # Compiler flags
+
+# Default target - build the executable
+all: $(NAME)
+
+# Rule to link object files into the final executable
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Rule to compile .c files into .o files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Rule to clean up generated files and Emacs/Vim temp files
+
+clean:
+	$(RM) $(NAME) *~
+
+# Rule to clean up only object files
+oclean:
+	$(RM) $(OBJ)
+
+# Rule to clean up everything (obj, exec, and temp files)
+fclean: clean oclean
+
+# Rule to force recompilation (clean everything and rebuild)
+re: fclean all
+
+# Phony targets (no conflicts with files named clean or all)
+.PHONY: all clean oclean fclean re
